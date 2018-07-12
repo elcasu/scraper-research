@@ -23,7 +23,7 @@ routes.post('/:lang/programacion', function(req, res) {
 /**
  * Get movie details
  */
-routes.get('/:lang/programacion/:slug/:index', function(req, res) {
+routes.get('/:lang/pelicula/:slug/:index', function(req, res) {
   res.status(200).send(getDetailsPage(req.params.lang, req.params.slug, req.params.index))
 })
 
