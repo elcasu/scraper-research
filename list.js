@@ -1,4 +1,5 @@
 const moment = require('moment')
+const faker = require('faker')
 const list = {}
 
 function getDates(index) {
@@ -42,6 +43,9 @@ for (let lang of ['es', 'en']) {
       title: `${titles[lang]} ${i}`,
       image: `http://www.mardelplatafilmfest.com/media/movies/image-${i}.jpg`,
       sinopsis: `${sinopsis[lang]} - ${i}`,
+      author: `${faker.name.firstName()} ${faker.name.lastName()}`,
+      duration: '90min',
+      country: `${faker.address.country()}`,
       events: dates.map(date => ({
         fullDate: date.format('YYYY-MM-DD'),
         day: date.format('DD'),

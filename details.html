@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detalle de la pelicula</title>
+  </head>
+  <body>
+    <!-- Movie information -->
+    <div class="col-sm-2 col-md-2">
+      <img class="img-rounded img-responsive" alt="" src="http://www.mardelplatafilmfest.com/media/movies/78_52_-_Galeria_31.jpg">
+      <blockquote>
+          <h1>{title}</h1> 
+          <small><cite>{author}</cite></small>
+      </blockquote>
+      <p class="data-film"></p>
+      <p class="competencia">
+        <i class="fa fa-film"></i> Panorama
+      </p>
+      <p class="competencia">
+        <i class="fa fa-film"></i> Ventana Documental
+      </p>
+      <p class="horario">
+        <i class="fa fa-clock-o"></i> <span class="duracion">Duración: {duration}</span>
+      </p>
+      <p class="lugar">
+        <i class="fa fa-map-marker"></i>
+        País: {country}
+      </p>
+    </div>
+
+    <!-- Sinopsis -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="sinopsis">
+        <p>{sinopsis}</p>
+      </div>
+    </div>
+
+    <!-- Events -->
+    <ul class="event-list">
+      <h3>Funciones</h3>
+      {eventList}
+    </ul>
+  </body>
+</html>
