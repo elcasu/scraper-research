@@ -4,62 +4,27 @@
     <title>Listado de películas</title>
   </head>
   <body>
+    <form role="form" action="http://localhost:9000/es/programacion" method="post" accept-charset="utf-8">
+      <h1 class="panel-title">Programación</h1>
+      <input type="text" class="form-control" placeholder="Título o Director" name="search_text" value="">
+      <select name="day">
+        <option value="0">Día</option>
+        <option value="1" selected="selected">Día 01 - Viernes 17</option>
+        <option value="2">Día 02 - Sábado 18</option>
+        <option value="3">Día 03 - Domingo 19</option>
+        <option value="4">Día 04 - Lunes 20</option>
+        <option value="5">Día 05 - Martes 21</option>
+        <option value="6">Día 06 - Miércoles 22</option>
+        <option value="7">Día 07 - Jueves 23</option>
+        <option value="8">Día 08 - Viernes 24</option>
+        <option value="9">Día 09 - Sábado 25</option>
+        <option value="10">Día 10 - Domingo 26</option>
+      </select>
+      <button class="btn btn-primary pull-right" name="enviar" type="submit">Buscar</button>
+    </form>
     <div class="col-lg-8 col-md-8 col-ls-6 col-xs-12 no-pad-left">
       <div class="listado_films">
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/78-52/17908">
-              <h2>78/52</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/78_52_-_Galeria_31.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/the-battleship-island/18036">
-              <h2>The Battleship Island</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/The_battleship_-_Galeria_11.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>        
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/78-52/17908">
-              <h2>78/52</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/78_52_-_Galeria_31.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/the-battleship-island/18036">
-              <h2>The Battleship Island</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/The_battleship_-_Galeria_11.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>        
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/78-52/17908">
-              <h2>78/52</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/78_52_-_Galeria_31.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 col-ls-3 col-sm-3 col-xs-12 no-pad">
-          <div class="film-select">
-            <a class="bg-1" href="http://www.mardelplatafilmfest.com/es/pelicula/the-battleship-island/18036">
-              <h2>The Battleship Island</h2>
-              <div class="hover"></div>
-              <div style="background-image:url('http://www.mardelplatafilmfest.com/media/movies/The_battleship_-_Galeria_11.jpg');" class="film-img">&nbsp;</div>
-            </a>
-          </div>
-        </div>        
+        {movieList}
       </div>
     </div>
   </body>
