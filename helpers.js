@@ -39,6 +39,7 @@ module.exports.getDetailsPage = (lang, slug, index) => {
 
   // replace main data
   detailsHtml = detailsHtml.replace('{title}', movie.title)
+  detailsHtml = detailsHtml.replace('{image}', movie.image)
   detailsHtml = detailsHtml.replace('{author}', movie.author)
   detailsHtml = detailsHtml.replace('{duration}', movie.duration)
   detailsHtml = detailsHtml.replace('{country}', movie.country)
