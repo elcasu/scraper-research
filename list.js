@@ -40,6 +40,7 @@ for (let lang of ['es', 'en']) {
   for (let i = 0; i < 50; i++) {
     const dates = getDates(i)
     list[lang].push({
+      id: i,
       title: `${titles[lang]} ${i}`,
       image: `http://www.mardelplatafilmfest.com/media/movies/image-${i}.jpg`,
       sinopsis: `${sinopsis[lang]} - ${i}`,

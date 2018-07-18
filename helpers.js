@@ -22,7 +22,7 @@ module.exports.getListPage = (lang, day) => {
     let aux = itemHtml.replace('{title}', movie.title)
     aux = aux.replace('{imgUrl}', movie.image)
     aux = aux.replace('{itemTitle}', movie.title.replace(/\s+/g, '-'))
-    aux = aux.replace('{itemId}', i)
+    aux = aux.replace('{itemId}', movie.id)
     htmlItems.push(aux)
   })
   mainHtml = mainHtml.replace('{movieList}', htmlItems.join("\n"))
