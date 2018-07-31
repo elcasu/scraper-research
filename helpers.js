@@ -26,7 +26,7 @@ module.exports.getListPage = (lang, day) => {
     htmlItems.push(aux)
   })
   mainHtml = mainHtml.replace('{movieList}', htmlItems.join("\n"))
-  mainHtml = mainHtml.replace('{lang}', lang)
+  mainHtml = mainHtml.replace(/\{lang\}/g, lang)
   return mainHtml.replace(/{host}/g, process.env.HOST)
 }
 
