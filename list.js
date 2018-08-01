@@ -26,7 +26,7 @@ function getDates(index) {
 }
 
 const titles = {
-  es: 'Título de la peli',
+  es: 'Titulo de la peli',
   en: 'Movie title'
 }
 
